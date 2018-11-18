@@ -23,11 +23,11 @@
         <table align = "center">
             <tr>
                 <td>Nome:</td>
-                <td><input type="text" class="form-control" name="nome" placeholder = "Nome do requisito"></td>
+                <td><input type="text" class="form-control" name="nome" placeholder = "Nome do requisito" required></td>
             </tr>
             <tr>
                 <td valign = "top">Descrição:</td><br/>
-                <td><textarea class="form-control" rows="20" cols = "100" name = "descricao"></textarea></td>
+                <td><textarea class="form-control" rows="20" cols = "100" name = "descricao" placeholder = "Descrição do requisito" required></textarea></td>
             </tr>
             <tr>
                 <td>Tipo: </td>
