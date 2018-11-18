@@ -8,6 +8,12 @@
     <title>Hello, world!</title>
 </head>
 <body>
+<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script> <script type="text/javascript">
+
+     bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+
+  </script>
+						
 <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:black">
                 <a class="navbar-brand" href="#">Requisitos</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +33,7 @@
             </tr>
             <tr>
                 <td valign = "top">Descrição:</td><br/>
-                <td><textarea class="form-control" rows="20" cols = "100" name = "descricao" placeholder = "Descrição do requisito" required></textarea></td>
+                <td><textarea class="form-control" rows="20" cols = "100" name = "descricao" placeholder = "Descrição do requisito"></textarea></td>
             </tr>
             <tr>
                 <td>Tipo: </td>
@@ -40,8 +46,9 @@
             </tr>
         </table>    
        
-        <button type="submit" class="btn btn-primary mb-2">Criar</button>
+        <button type="submit" class="btn btn-primary mb-2" onclick = "nicEditors.findEditor('descricao').saveContent()";>Criar</button>
     </form>
+
 </body>
 </html>
 
