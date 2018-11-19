@@ -19,11 +19,11 @@
         $funcional = false;
     }
 
-    $sql = "INSERT INTO requisito (id_autor, nome, descricao, funcional) VALUES ('$autor', '$nome', '$descricao', '$funcional')";
+    $sql = "INSERT INTO requisito (id_autor, nome, descricao, funcional, criacao) VALUES ('$autor', '$nome', '$descricao', '$funcional', now())";
 
     if ($conexao->query($sql) === TRUE) {
         //Cadastrou com sucesso, levar pra tela de listagem
-        echo "Bem sucedido";
+        header("Location: http://localhost/GerenciadorRequisitos/listagemRequisitos.php");
     } else {
         //Mensagem de erro do sql
         echo "Error: " . $sql . "<br>" . $conexao->error;
