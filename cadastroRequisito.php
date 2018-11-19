@@ -42,8 +42,8 @@
 </head>
     <body>
         <ul>
-        <li><a href="#home">Requisitos</a></li>
-        <li><a href="#news">Baselines</a></li>
+        <li><a href="listagemRequisitos.php">Requisitos</a></li>
+        <li><a href="#baselines">Baselines</a></li>
         </ul>
 
         <h2 align = "center">Nome do projeto</h2>
