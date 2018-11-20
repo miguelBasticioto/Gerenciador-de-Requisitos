@@ -21,26 +21,64 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <title>Listagem de Requisitos</title>
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #0061b7;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-    <table class = "w3-table w3" style = "background-color: #fafafa">
-        <?php
-            if ($result->num_rows > 0) {
-                // output data of each row
-                while($row = $result->fetch_assoc()) { 
-                    ?>
-                    <tr>
-                        <td><?php echo $row["id"];?></td>
-                        <td><?php echo $row["nome"];?></td>
-                        <td><?php echo $row["criacao"];?></td>
-                    </tr>
-                <?php 
+    <ul>
+    <li><a href="listagemRequisitos.php">Requisitos</a></li>
+    <li><a href="#baselines">Baselines</a></li>
+    </ul>
+
+    <h2 style = "height: 100px; text-align: center">Nome do projeto</h2>
+
+    <div style = "width: 50%; margin: 0 auto">
+        <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
+            <?php
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) { 
+                        ?>
+                        <tr style = "border-bottom : 1px solid #999999">
+                            <td><?php echo $row["id"];?></td>
+                            <td width = "70%"><?php echo $row["nome"];?></td>
+                            <td style = "text-align: right"><?php echo $row["criacao"];?></td>
+                        </tr>
+                    <?php 
+                    }
+                } else {
+                    echo "0 results";
                 }
-            } else {
-                echo "0 results";
-            }
-        ?>
-    </table>
+            ?>
+        </table>
+        <br/>
+        <button type="submit" class="btn btn-primary mb-2" onclick = "location.href = 'cadastroRequisito.php';">Criar<br/>Requisito</button>
+        <button type="submit" class="btn btn-primary mb-2" onclick = "location.href = '';" style = "float: right">Criar<br/>Baseline</button>
+     </div>
 
 </body>
 </html>
