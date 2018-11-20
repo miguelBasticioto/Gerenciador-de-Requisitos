@@ -108,7 +108,7 @@
             echo "0 results";
         }
         ?>
-        <button type="submit" class="btn btn-primary mb-2" style = "background-color: #ea5e48; border: 1px solid #ff5e48"onclick = "nicEditors.findEditor('descricao').saveContent()";>Deletar</button>
+        <button type="submit" class="btn btn-primary mb-2" style = "background-color: #ea5e48; border: 1px solid #ff5e48" onclick = "location.href = 'deletarRequisito.php?id=<?php echo $id ?>';";>Deletar</button>
     </body>
 </html>
 
