@@ -60,12 +60,11 @@
         <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
             <?php
                 if ($result->num_rows > 0) {
-                    // output data of each row
                     while($row = $result->fetch_assoc()) { 
                         ?>
                         <tr style = "border-bottom : 1px solid #999999">
                             <td><?php echo $row["id"];?></td>
-                            <td width = "70%"><?php echo $row["nome"];?></td>
+                            <td width = "70%"><a href = "editarRequisito.php?id=<?php echo $row["id"];?>"><?php echo $row["nome"];?></a></td>
                             <td style = "text-align: right"><?php echo $row["criacao"];?></td>
                         </tr>
                     <?php 
