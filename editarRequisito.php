@@ -53,6 +53,16 @@
             background-color: #ffffff;
         }
     </style>
+
+    <script>
+        function confirmacao(){
+            if(confirm("Você deseja deletar o requisito?")) {
+                window.location = "deletarRequisito.php?id=<?php echo $id;?>";
+            } else {
+
+            }
+        }
+    </script>
 </head>
     <body>
         <ul>
@@ -61,6 +71,8 @@
         </ul>
 
         <h2 align = "center">Nome do projeto</h2>
+        
+        <center>Criado por: Nome do usuário</center>
 
         <?php 
         if ($result->num_rows > 0) {
@@ -108,7 +120,7 @@
             echo "0 results";
         }
         ?>
-        <button type="submit" class="btn btn-primary mb-2" style = "background-color: #ea5e48; border: 1px solid #ff5e48" onclick = "location.href = 'deletarRequisito.php?id=<?php echo $id ?>';";>Deletar</button>
+        <button type="submit" class="btn btn-primary mb-2" style = "background-color: #ea5e48; border: 1px solid #ff5e48" onclick = "confirmacao()";>Deletar</button>
     </body>
 </html>
 
