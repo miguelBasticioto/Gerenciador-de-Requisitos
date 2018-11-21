@@ -1,0 +1,93 @@
+{
+  "id": "30b4bd28-99a4-46eb-b880-b65fb91f9e2a",
+  "version": "1.1",
+  "name": "SeleniumProject",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "8eb9d813-2997-4ac7-8b2e-fa53c93e0bc8",
+    "name": "Criar requisito",
+    "commands": [{
+      "id": "a2baf371-c551-4251-8cfd-5bfee078cdb0",
+      "comment": "",
+      "command": "open",
+      "target": "/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79bf7ffe-d293-4959-a3e1-7c68079ebf2a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd7b45c5-cdf5-4126-abfa-9914e2aa2f7f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d4ecb1-cdf0-4d35-840e-2ff733fdb508",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fbdfbb2-ba06-4b6f-9ef9-123c549a8a2e",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nome do requisito"
+    }, {
+      "id": "a75985dd-70d9-4e74-9164-3084048169b9",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Requisito descrito<br>"
+    }, {
+      "id": "92631dc5-5f87-41f6-9421-1dd7950af3cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8e139a81-26b0-40a7-91e2-175a59a31c77",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8eb9d813-2997-4ac7-8b2e-fa53c93e0bc8"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
