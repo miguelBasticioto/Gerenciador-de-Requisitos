@@ -9,6 +9,7 @@
 
     $sql = "SELECT * FROM requisito WHERE id_autor = $autor";
     $result = $conexao->query($sql);
+    $cont = 0;
 
     
 ?>
@@ -57,26 +58,30 @@
     <h2 style = "height: 100px; text-align: center">Nome do projeto</h2>
 
     <div style = "width: 50%; margin: 0 auto">
-        <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
-            <?php
-                if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) { 
-                        ?>
-                        <tr style = "border-bottom : 1px solid #999999">
-                            <td><?php echo $row["id"];?></td>
-                            <td width = "70%"><a href = "editarRequisito.php?id=<?php echo $row["id"];?>"><?php echo $row["nome"];?></a></td>
-                            <td style = "text-align: right"><?php echo $row["criacao"];?></td>
-                        </tr>
-                    <?php 
+        <form action = "salvarBaseline.php" method = "get">
+            <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
+                <?php
+                    if ($result->num_rows > 0) {
+                        while($row = $result->fetch_assoc()) { 
+                            ?>
+                            <tr style = "border-bottom : 1px solid #999999">
+                                <td><?php echo $row["id"];?></td>
+                                <td width = "70%"><a href = "editarRequisito.php?id=<?php echo $row["id"];?>"><?php echo $row["nome"];?></a></td>
+                                <td style = "text-align: right"><?php echo $row["criacao"];?></td>
+                                <td><input type = "checkbox" name = "idRequisito[]" value = "<?php echo $row["id"];?>"/></td>
+                                <?php $cont = $cont + 1;?>
+                            </tr>
+                        <?php 
+                        }
+                    } else {
+                        echo "0 results";
                     }
-                } else {
-                    echo "0 results";
-                }
-            ?>
-        </table>
-        <br/>
+                ?>
+            </table>
+            <br/>
+        <button type="submit" class="btn btn-primary mb-2" style = "float: right">Criar<br/>Baseline</button>
+        </form>
         <button type="submit" class="btn btn-primary mb-2" onclick = "location.href = 'cadastroRequisito.php';">Criar<br/>Requisito</button>
-        <button type="submit" class="btn btn-primary mb-2" onclick = "location.href = '';" style = "float: right">Criar<br/>Baseline</button>
      </div>
 
 </body>

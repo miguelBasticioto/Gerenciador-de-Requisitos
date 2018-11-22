@@ -5,3 +5,4 @@
     $dbname = "gerenciador_requisitos";
     $conexao = new mysqli($servername, $username, $password, $dbname);
 ?>
+
