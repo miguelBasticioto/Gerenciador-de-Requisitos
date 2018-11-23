@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 23-Nov-2018 às 04:31
+-- Generation Time: 23-Nov-2018 às 15:10
 -- Versão do servidor: 10.1.37-MariaDB
 -- versão do PHP: 7.2.12
 
@@ -33,6 +33,14 @@ CREATE TABLE `baseline` (
   `criacao` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `baseline`
+--
+
+INSERT INTO `baseline` (`id`, `criacao`) VALUES
+(11, '2018-11-23'),
+(12, '2018-11-23');
+
 -- --------------------------------------------------------
 
 --
@@ -46,8 +54,20 @@ CREATE TABLE `baseline_requisito` (
   `descricao_requisito` text NOT NULL,
   `funcional_requisito` tinyint(1) NOT NULL,
   `criacao_requisito` date NOT NULL,
-  `id_autor` int(11) NOT NULL
+  `id_autor` int(11) NOT NULL,
+  `id_requisito` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `baseline_requisito`
+--
+
+INSERT INTO `baseline_requisito` (`id`, `id_baseline`, `nome_requisito`, `descricao_requisito`, `funcional_requisito`, `criacao_requisito`, `id_autor`, `id_requisito`) VALUES
+(14, 11, 'Requisito 01', 'asdasdasdasd<b>asdasdasdasd</b>asdasdasdasd', 1, '2018-11-20', 1, 15),
+(15, 11, 'Requisito 02', 'Teste', 0, '2018-11-20', 1, 16),
+(16, 12, 'Requisito 01', 'asdasdasdasd<b>asdasdasdasd</b>asdasdasdasd', 1, '2018-11-20', 1, 15),
+(17, 12, 'Requisito 02', 'Teste', 0, '2018-11-20', 1, 16),
+(18, 12, 'sadasd', 'asdasdasd', 1, '2018-11-20', 1, 17);
 
 -- --------------------------------------------------------
 
@@ -103,13 +123,13 @@ ALTER TABLE `requisito`
 -- AUTO_INCREMENT for table `baseline`
 --
 ALTER TABLE `baseline`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `baseline_requisito`
 --
 ALTER TABLE `baseline_requisito`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `requisito`

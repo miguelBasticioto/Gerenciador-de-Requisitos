@@ -35,7 +35,7 @@
                 $idRequisito = $row['id'];
                 $nomeRequisito = $row['nome'];
 
-                $sql = "INSERT INTO baseline_requisito (criacao_requisito, descricao_requisito, funcional_requisito, id_autor, id_baseline, nome_requisito) VALUES ('$criacaoRequisito', '$descricaoRequisito', '$funcionalRequisito', '$autor', '$idBaseline', '$nomeRequisito')";
+                $sql = "INSERT INTO baseline_requisito (criacao_requisito, descricao_requisito, funcional_requisito, id_autor, id_baseline, nome_requisito, id_requisito) VALUES ('$criacaoRequisito', '$descricaoRequisito', '$funcionalRequisito', '$autor', '$idBaseline', '$nomeRequisito', '$idRequisito')";
                 $result = $conexao->query($sql);
                 
             }
