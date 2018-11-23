@@ -474,7 +474,7 @@
     }]
   }, {
     "id": "fd927173-1460-4cb5-a136-a88643848ce0",
-    "name": "Deletar Baseline",
+    "name": "6.Deletar Baseline",
     "commands": [{
       "id": "c87203bb-8556-4ecb-a394-07efa083263e",
       "comment": "",
@@ -530,7 +530,7 @@
     }]
   }, {
     "id": "ebf3b63c-7482-40e5-a0b9-ed0ae0f47942",
-    "name": "Deletar requisito",
+    "name": "7.Deletar requisito",
     "commands": [{
       "id": "d719b7bb-2df1-44ed-a477-2c9e9c421b41",
       "comment": "",
