@@ -472,6 +472,156 @@
       ],
       "value": ""
     }]
+  }, {
+    "id": "fd927173-1460-4cb5-a136-a88643848ce0",
+    "name": "Deletar Baseline",
+    "commands": [{
+      "id": "c87203bb-8556-4ecb-a394-07efa083263e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemBaselines.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "852310d5-55ef-4331-a5fd-20dbb6e99e5d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "610a007b-ff9e-4535-bd06-db975e329508",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2018-11-23",
+      "targets": [
+        ["linkText=2018-11-23", "linkText"],
+        ["css=td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'2018-11-23')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'detalhamentoBaseline.php?id=17')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00012505-9a85-45c3-9254-99f2dd384967",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1da11ee1-48d3-441d-bf29-c52ef9716d74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce28b21f-1ab9-42b3-a7b0-b50d2e84fb49",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ebf3b63c-7482-40e5-a0b9-ed0ae0f47942",
+    "name": "Deletar requisito",
+    "commands": [{
+      "id": "d719b7bb-2df1-44ed-a477-2c9e9c421b41",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d748be1-5178-457d-9f90-75fe4b2928b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x701",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a6ca4c3-093c-4fad-a91a-f5e7cce5c9e6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teste baseline 1",
+      "targets": [
+        ["linkText=Teste baseline 1", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Teste baseline 1')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editarRequisito.php?id=43')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "587b8da1-09d1-49f0-ae34-2f7c4f58ede9",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "862d6710-de97-4487-a186-055d26d67edc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(9)",
+      "targets": [
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//body/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f459b6a9-796c-4a10-9d73-f291a5434cd2",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d58fe24a-0f1e-41b6-9ede-70b910cc458a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Teste baseline 2",
+      "targets": [
+        ["linkText=Teste baseline 2", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Teste baseline 2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editarRequisito.php?id=44')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0b822b0-c17b-4c1c-a0bf-302c2f6ba023",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc996c27-39b2-4a16-87ba-7af12b76d70f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(9)",
+      "targets": [
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//body/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b98b23-485d-4795-911d-d78e9bbffac9",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "93591f9c-b9ef-4a51-8cf5-2bfc7cf67035",
