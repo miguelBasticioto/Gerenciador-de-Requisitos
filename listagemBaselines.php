@@ -7,11 +7,8 @@
 
     $autor = 1;
 
-    $sql = "SELECT * FROM requisito WHERE id_autor = $autor";
+    $sql = "SELECT * FROM baseline";
     $result = $conexao->query($sql);
-    $cont = 0;
-
-    
 ?>
 <html>
 <head>    
@@ -21,7 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <title>Listagem de Requisitos</title>
+    <title>Listagem de Baselines</title>
 
     <style>
         ul {
@@ -58,18 +55,14 @@
     <h2 style = "height: 100px; text-align: center">Nome do projeto</h2>
 
     <div style = "width: 50%; margin: 0 auto">
-        <form action = "salvarBaseline.php" method = "get">
-            <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
+        <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
                 <?php
                     if ($result->num_rows > 0) {
                         while($row = $result->fetch_assoc()) { 
                             ?>
                             <tr style = "border-bottom : 1px solid #999999">
-                                <td><?php echo $row["id"];?></td>
-                                <td width = "70%"><a href = "editarRequisito.php?id=<?php echo $row["id"];?>"><?php echo $row["nome"];?></a></td>
-                                <td style = "text-align: right"><?php echo $row["criacao"];?></td>
-                                <td><input type = "checkbox" name = "idRequisito[]" value = "<?php echo $row["id"];?>"/></td>
-                                <?php $cont = $cont + 1;?>
+                                <td><a href = "">#<?php echo $row["id"];?></a></td>
+                                <td width = "95%"><a href = ""><?php echo $row["criacao"];?></a></td>
                             </tr>
                         <?php 
                         }
@@ -78,10 +71,6 @@
                     }
                 ?>
             </table>
-            <br/>
-        <button type="submit" class="btn btn-primary mb-2" style = "float: right">Criar<br/>Baseline</button>
-        </form>
-        <button type="submit" class="btn btn-primary mb-2" onclick = "location.href = 'cadastroRequisito.php';">Criar<br/>Requisito</button>
      </div>
 
 </body>
