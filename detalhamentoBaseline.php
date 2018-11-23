@@ -24,6 +24,16 @@
 
     <title>Baseline</title>
 
+    <script>
+        function confirmacao(){
+            if(confirm("Você deseja deletar a baseline?")) {
+                window.location = "deletarBaseline.php?id=<?php echo $idBaseline;?>";
+            } else {
+
+            }
+        }
+    </script>
+
     <style>
         ul {
             list-style-type: none;
@@ -60,7 +70,6 @@
     <h2 style = "height: 100px; text-align: center">Baseline #<?php echo $idBaseline;?></h2>
 
     <div style = "width: 50%; margin: 0 auto">
-        <form action = "salvarBaseline.php" method = "get">
             <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
                 <?php
                     if ($result->num_rows > 0) {
@@ -80,7 +89,8 @@
                 ?>
             </table>
             <br/>
-        </form>
+        <button type="submit" class="btn btn-primary mb-2" style = "background-color: #ea5e48; border: 1px solid #ff5e48" onclick = "confirmacao()";>Deletar</button>
+
      </div>
 
 </body>

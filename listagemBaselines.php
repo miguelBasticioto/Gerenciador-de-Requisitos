@@ -54,6 +54,7 @@
 
     <h2 style = "height: 100px; text-align: center">Nome do projeto</h2>
 
+
     <div style = "width: 50%; margin: 0 auto">
         <table class = "w3-table w3" style = "background-color: #fafafa; border: 1px solid #999999" align = "center">
                 <?php
