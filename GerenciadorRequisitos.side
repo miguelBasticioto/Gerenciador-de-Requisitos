@@ -203,6 +203,275 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "1a8f6fdc-44e2-4259-9fe1-def9466bdd1d",
+    "name": "4.Criar Requisito",
+    "commands": [{
+      "id": "cbea2335-73a7-4495-bc5a-a074a22a2170",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6297e27f-b7a1-44a5-90ff-7fc7a551a8d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60e9624d-18ce-46c7-b1e0-ae3f3f17e068",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "816c34df-c448-46af-8d0f-5fb993526ab2",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43e2e67b-739e-4789-90b7-6895a4134e99",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Teste baseline 1asd"
+    }, {
+      "id": "b31c800c-740a-49d8-ad40-834bfd05d4fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93462037-8ea1-429e-abc0-f9f6ffbe87cf",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "asd<br>"
+    }, {
+      "id": "e6871034-fb2c-489d-8672-fc46296e5366",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01f3b2e4-47a4-43ed-8765-d21f16b09b1f",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Teste baseline 1"
+    }, {
+      "id": "2a968a66-636a-4ae8-af77-48db8561d1a6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5d1b2fb0-37ba-4fc4-86c0-8d7fc9c407ba",
+    "name": "4.Criar requisito",
+    "commands": [{
+      "id": "f74fb654-3bed-47b0-b5bb-c89a811b4623",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5846cf39-e63b-4b0b-a19c-4329677d102a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a91a4d9-63cd-4366-b106-8d8c18ae26a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19efcd4c-db4f-49a6-9c70-c69920e03e47",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddc7a211-4c9f-4358-8b9a-75680a931d49",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Teste baseline 2"
+    }, {
+      "id": "e288b2d0-87d8-470b-bf65-e403eaa43815",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0240ab63-93a7-4cd3-abda-afe855d004be",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2b7e9fc-32bd-43b6-ae67-e5ebd01432a6",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1f4d55-cfa2-4e78-b965-ec5e8d61fc8f",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "asdasd<br>"
+    }, {
+      "id": "3a44dbcc-6d76-4b64-93c6-0a699676f959",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a5729166-11e1-4c52-84bb-1ebc8940ee5a",
+    "name": "5.Criar baseline",
+    "commands": [{
+      "id": "e3a72ed7-089d-4d1b-890b-5ba30f644901",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "880c1111-8a1b-4f55-8211-6064c3e126eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92efde86-b6e2-46dd-a035-16919034055c",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) input",
+      "targets": [
+        ["css=tr:nth-child(4) input", "css:finder"],
+        ["xpath=(//input[@name='idRequisito[]'])[4]", "xpath:attributes"],
+        ["xpath=//tr[4]/td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b4abc8f-a362-4e80-bfc1-b8755eb14a9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) input",
+      "targets": [
+        ["css=tr:nth-child(5) input", "css:finder"],
+        ["xpath=(//input[@name='idRequisito[]'])[5]", "xpath:attributes"],
+        ["xpath=//tr[5]/td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a42e3115-3905-45ae-b135-5da4766daa79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "93591f9c-b9ef-4a51-8cf5-2bfc7cf67035",
