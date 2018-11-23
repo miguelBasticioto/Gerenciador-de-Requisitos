@@ -1,0 +1,217 @@
+{
+  "id": "0f6a33c9-8376-46d9-b4b7-332e3eed7abb",
+  "version": "1.1",
+  "name": "GerenciadorRequisitos",
+  "url": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+  "tests": [{
+    "id": "7858a099-9bc4-4c0d-82dd-abf697e54566",
+    "name": "1.Criar requisito",
+    "commands": [{
+      "id": "567b1e15-e5b5-4dd2-93be-6e2aaee00967",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc188894-5a20-48b0-bc7e-3d7e74df8a58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b52c7b34-c2a3-4ec1-a9b2-5fb7bfac7ef2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(2)",
+      "targets": [
+        ["css=.btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "479ae12e-d901-4544-803a-535b024d87ac",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be6dcfac-ad5f-4dcc-8266-b7db0b044310",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Nome do requisito"
+    }, {
+      "id": "ec459563-0394-462e-a5a5-537156124805",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.nicEdit-main",
+      "targets": [
+        ["css=.nicEdit-main", "css:finder"],
+        ["xpath=//td[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "Descricao<br>"
+    }, {
+      "id": "47f973ee-791f-470b-8357-8034a4c6386c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "a0c4b743-a642-4312-a2da-36667cf5e5d5",
+    "name": "2.Editar Requisito",
+    "commands": [{
+      "id": "96a37164-9576-4a66-9422-947db669bd35",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a732400-978e-48c3-9652-3a6c5662bf27",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d1cf099-2ffd-41d0-a11c-1707a6bbae45",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nome do requisito",
+      "targets": [
+        ["linkText=Nome do requisito", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nome do requisito')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editarRequisito.php?id=25')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d32ca4-363f-414d-a11b-717fe2606db4",
+      "comment": "",
+      "command": "click",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f61e7c3-caef-47a3-963a-101d9ab5de0e",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=input[name=\"nome\"]", "css"],
+        ["css=.form-control:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Editado"
+    }, {
+      "id": "3057825d-5edc-4d4b-a712-0e3e57e6f4cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(4)",
+      "targets": [
+        ["css=.btn:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3607a64d-6ac6-4264-b489-5fb9b0ec8c9e",
+    "name": "3.Deletar requisito",
+    "commands": [{
+      "id": "f8e605cf-b340-497c-8d50-7c9fbed4f4b6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/GerenciadorRequisitos/listagemRequisitos.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d280db3c-df2f-4576-8dd1-628593bf0863",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x699",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e2e02d9-7fad-429b-b3ea-6e9060cd62ef",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editado",
+      "targets": [
+        ["linkText=Editado", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Editado')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'editarRequisito.php?id=29')]", "xpath:href"],
+        ["xpath=//tr[4]/td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f51ca103-6df0-4674-8fd7-89fd72363e42",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c4fc0ed-838d-410b-b7ef-fd459e98732e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(9)",
+      "targets": [
+        ["css=.btn:nth-child(9)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//body/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59fa2c61-2ffc-4dbf-b508-1d0a851ee696",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "93591f9c-b9ef-4a51-8cf5-2bfc7cf67035",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7858a099-9bc4-4c0d-82dd-abf697e54566"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/GerenciadorRequisitos/listagemRequisitos.php"],
+  "plugins": []
+}
